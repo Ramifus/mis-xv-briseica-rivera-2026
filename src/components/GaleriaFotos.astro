@@ -235,8 +235,8 @@
                 },
             });
 
-            // ── FOTOS: foto1.png ... foto17.png (sin foto13) ──
-            const fotos = Array.from({ length: 17 }, (_, i) => i + 1)
+            // ── FOTOS: foto1.png ... foto23.png (sin foto13) ──
+            const fotos = Array.from({ length: 23 }, (_, i) => i + 1)
                 .filter(n => n !== 13)
                 .map(n => ({ src: `/imagenes/foto${n}.png`, alt: `Foto ${n}` }));
 
