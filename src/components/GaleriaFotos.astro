@@ -235,9 +235,9 @@
                 },
             });
 
-            // ── FOTOS: foto1.png ... foto23.png (sin foto13) ──
+            // ── FOTOS: foto1.png ... foto23.png (sin foto13, 16, 17, 22, 23) ──
             const fotos = Array.from({ length: 23 }, (_, i) => i + 1)
-                .filter(n => n !== 13)
+                .filter(n => ![13, 16, 17, 22, 23].includes(n))
                 .map(n => ({ src: `/imagenes/foto${n}.png`, alt: `Foto ${n}` }));
 
             const DURACION = 4500;
